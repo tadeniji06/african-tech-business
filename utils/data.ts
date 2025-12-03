@@ -3,6 +3,10 @@ export const headerLinks = [
 		title: "Home",
 		link: "/",
 	},
+		{
+		title: "Reports",
+		link: "/reports",
+	},
 	{
 		title: "Strategy",
 		link: "/posts",
