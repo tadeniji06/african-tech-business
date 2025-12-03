@@ -171,7 +171,7 @@ const Posts = () => {
 				initial={{ opacity: 0, y: -20 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.8 }}
-				className='bg-gradient-to-br from-gray-700 via-primary-red to-gray-700 text-white py-20'
+				className='bg-gradient-to-br from-gray-700 via-black to-gray-700 text-white py-20'
 			>
 				<div className='container mx-auto px-6 lg:px-12'>
 					<div className='max-w-4xl mx-auto text-center'>
@@ -234,7 +234,7 @@ const Posts = () => {
 							onClick={() => setSelectedCategory(null)}
 							className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
 								!selectedCategory
-									? "bg-primary-red text-white"
+									? "bg-black text-white"
 									: "bg-gray-100 text-gray-700 hover:bg-gray-200"
 							}`}
 						>
@@ -246,7 +246,7 @@ const Posts = () => {
 								onClick={() => setSelectedCategory(category._id)}
 								className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
 									selectedCategory === category._id
-										? "bg-primary-red text-white"
+										? "bg-black text-white"
 										: "bg-gray-100 text-gray-700 hover:bg-gray-200"
 								}`}
 							>
@@ -326,7 +326,7 @@ const Posts = () => {
 																.map((category) => (
 																	<span
 																		key={category._id}
-																		className='px-3 py-1 bg-primary-red/10 text-primary-red text-xs font-medium rounded-full'
+																		className='px-3 py-1 bg-black text-white text-xs font-medium rounded-full'
 																	>
 																		{category.title}
 																	</span>
