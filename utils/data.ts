@@ -12,6 +12,10 @@ export const headerLinks = [
 		link: "/posts",
 	},
 	{
+		title: "Blockchain & Crypto",
+		link: "/posts",
+	},
+	{
 		title: "Fintech",
 		link: "/posts",
 	},
