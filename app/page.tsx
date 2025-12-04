@@ -8,7 +8,7 @@ const page = () => {
 	return (
 		<>
 			<Hero />
-			{/* <LatestPosts /> */}
+			<LatestPosts />
 			<App />
 			{/* <NewPodcasts /> */}
 			{/* <MagAnnounce /> */}

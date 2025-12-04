@@ -79,7 +79,7 @@ const LatestPosts = () => {
 			<section className='py-20 px-6 lg:px-12 bg-white'>
 				<div className='max-w-7xl mx-auto'>
 					<div className='flex items-center justify-center'>
-						<div className='animate-spin rounded-full h-12 w-12 border-b-2 border-primary-red'></div>
+						<div className='animate-spin rounded-full h-12 w-12 border-b-2 border-black'></div>
 					</div>
 				</div>
 			</section>
@@ -130,7 +130,7 @@ const LatestPosts = () => {
 					<h2 className='text-4xl md:text-5xl font-bold text-gray-900 mb-6'>
 						More Stories
 					</h2>
-					<div className='w-24 h-1 bg-primary-red mx-auto mb-6'></div>
+					<div className='w-24 h-1 bg-black mx-auto mb-6'></div>
 					<p className='text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed'>
 						Continue exploring our collection of authentic voices and
 						compelling narratives from across Africa
@@ -179,7 +179,7 @@ const LatestPosts = () => {
 																.map((category) => (
 																	<span
 																		key={category._id}
-																		className='px-3 py-1 bg-primary-red/10 text-primary-red text-xs font-semibold rounded-full'
+																		className='px-3 py-1 bg-black text-white text-xs font-semibold rounded-full'
 																	>
 																		{category.title}
 																	</span>
@@ -260,7 +260,7 @@ const LatestPosts = () => {
 						>
 							<Link
 								href='/posts'
-								className='inline-flex items-center gap-3 bg-primary-red hover:bg-primary-red/90 text-white px-10 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg'
+								className='inline-flex items-center gap-3 bg-black hover:bg-primary-red/90 text-white px-10 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg'
 							>
 								Explore All Stories
 								<Icon

@@ -17,7 +17,7 @@ export async function generateMetadata({
 
 	if (!post) {
 		return {
-			title: "Post Not Found | Showcase Africa",
+			title: "Post Not Found",
 		};
 	}
 
@@ -66,7 +66,7 @@ export async function generateMetadata({
 		post.categories?.map((cat) => cat.title.toLowerCase()) || [];
 
 	return {
-		title: `${post.title} | Showcase Africa`,
+		title: `${post.title} | Africa Tech Business & Innovation Stories`,
 		description,
 		keywords: [
 			...categories,
@@ -77,17 +77,17 @@ export async function generateMetadata({
 			...(post.author?.name ? [post.author.name] : []),
 		],
 		authors: post.author ? [{ name: post.author.name }] : undefined,
-		creator: post.author?.name || "Showcase Africa Team",
-		publisher: "Showcase Africa",
-		applicationName: "Showcase Africa",
+		creator: post.author?.name || "Africa Tech Business & Innovation Stories Team",
+		publisher: "Africa Tech Business & Innovation Stories",
+		applicationName: "Africa Tech Business & Innovation Stories",
 		alternates: {
-			canonical: `https://showcaseafricaonline.com/posts/${post.slug.current}`,
+			canonical: `https://africatechbusiness.com/posts/${post.slug.current}`,
 		},
 		openGraph: {
 			title: post.title,
 			description,
-			url: `https://showcaseafricaonline.com/posts/${post.slug.current}`,
-			siteName: "Showcase Africa",
+			url: `https://africatechbusiness.com/posts/${post.slug.current}`,
+			siteName: "Africa Tech Business & Innovation Stories",
 			type: "article",
 			locale: "en_US",
 			publishedTime: post.publishedAt,
@@ -106,7 +106,7 @@ export async function generateMetadata({
 			card: "summary_large_image",
 			title: post.title,
 			description,
-			creator: "@Showcaseafrica_",
+			creator: "@AfricaTechBiz_",
 			images: [imageUrl],
 		},
 		icons: {

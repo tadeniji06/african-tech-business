@@ -81,7 +81,7 @@ const AuthorPopup = ({
 
 							<div className='flex items-start gap-4'>
 								{author.image && (
-									<div className='relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 ring-4 ring-primary-red/10'>
+									<div className='relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 ring-4 ring-black'>
 										<Image
 											src={urlFor(author.image)
 												.width(80)
@@ -105,7 +105,7 @@ const AuthorPopup = ({
 							<div className='mt-6 pt-4 border-t border-gray-100'>
 								<button
 									onClick={() => setShowPopup(false)}
-									className='w-full bg-primary-red text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors duration-200 font-medium'
+									className='w-full bg-black text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors duration-200 font-medium'
 								>
 									Close
 								</button>
@@ -244,7 +244,7 @@ const PostClient = ({ post }: PostClientProps) => {
 					href={value.href}
 					target='_blank'
 					rel='noopener noreferrer'
-					className='text-primary-red hover:text-red-700 underline transition-colors duration-200'
+					className='text-black hover:text-red-700 underline transition-colors duration-200'
 				>
 					{children}
 				</a>
@@ -307,7 +307,7 @@ const PostClient = ({ post }: PostClientProps) => {
 				<div className='container mx-auto px-6 lg:px-12 py-6'>
 					<Link
 						href='/posts'
-						className='inline-flex items-center gap-2 text-primary-red hover:text-red-700 transition-colors duration-200'
+						className='inline-flex items-center gap-2 text-black hover:text-red-700 transition-colors duration-200'
 					>
 						<Icon icon='lucide:arrow-left' width={20} height={20} />
 						Back to Posts
@@ -347,7 +347,7 @@ const PostClient = ({ post }: PostClientProps) => {
 									{post.categories.map((category) => (
 										<span
 											key={category._id}
-											className='px-3 py-1 bg-primary-red/10 text-primary-red text-sm font-medium rounded-full'
+											className='px-3 py-1 bg-black text-white text-sm font-medium rounded-full'
 										>
 											{category.title}
 										</span>
@@ -539,7 +539,7 @@ const PostClient = ({ post }: PostClientProps) => {
 					>
 						<Link
 							href='/posts'
-							className='inline-flex items-center gap-2 bg-primary-red text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors duration-200 font-medium'
+							className='inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors duration-200 font-medium'
 						>
 							<Icon icon='lucide:grid-3x3' width={20} height={20} />
 							View All Posts
