@@ -8,7 +8,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 	// Create sitemap entries for blog posts
 	const blogEntries: MetadataRoute.Sitemap = blogPosts.map(
 		(post: any) => ({
-			url: `https://www.showcaseafricaonline.com/posts/${post.slug.current}`,
+			url: `https://www.africatechbusiness.com/posts/${post.slug.current}`,
 			lastModified: new Date(post.publishedAt),
 			changeFrequency: "monthly" as const,
 			priority: 0.6,
@@ -18,31 +18,26 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 	// Static pages
 	const staticPages: MetadataRoute.Sitemap = [
 		{
-			url: "https://www.showcaseafricaonline.com",
+			url: "https://www.africatechbusiness.com",
 			lastModified: new Date(),
 			changeFrequency: "yearly",
 			priority: 1,
 		},
 		{
-			url: "https://www.showcaseafricaonline.com/about",
+			url: "https://www.africatechbusiness.com/about",
 			lastModified: new Date(),
 			changeFrequency: "monthly",
 			priority: 0.8,
 		},
 		{
-			url: "https://www.showcaseafricaonline.com/podcasts",
+			url: "https://www.africatechbusiness.com/reports",
 			lastModified: new Date(),
 			changeFrequency: "monthly",
 			priority: 0.8,
 		},
+
 		{
-			url: "https://www.showcaseafricaonline.com/magazines",
-			lastModified: new Date(),
-			changeFrequency: "weekly",
-			priority: 0.9,
-		},
-		{
-			url: "https://www.showcaseafricaonline.com/posts",
+			url: "https://www.africatechbusiness.com/posts",
 			lastModified: new Date(),
 			changeFrequency: "weekly",
 			priority: 0.7,
