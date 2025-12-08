@@ -7,10 +7,10 @@ export const headerLinks = [
 		title: "Reports",
 		link: "/reports",
 	},
-	{
-		title: "Strategy",
-		link: "/posts",
-	},
+	//{
+//		title: "Strategy",
+//		link: "/posts",
+//	},
 	{
 		title: "AI & Emerging Tech",
 		link: "/posts",
@@ -23,10 +23,10 @@ export const headerLinks = [
 		title: "Fintech",
 		link: "/posts",
 	},
-	{
-		title: "Entrepreneurship",
-		link: "/posts",
-	},
+//	{
+	//	title: "Entrepreneurship",
+	//	link: "/posts",
+// 	},
 	// {
 	// 	title: "Magazines",
 	// 	link: "/magazines",
